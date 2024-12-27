@@ -45,9 +45,6 @@ export class SpotsService {
   }
 
   update(eventId: string, spotId: string, updateSpotDto: UpdateSpotDto) {
-    console.log('updateSpotDto', updateSpotDto);
-    console.log('spotId', spotId);
-    console.log('eventId', eventId);
     return this.prismaService.spot.update({
       where: {
         id: spotId,
